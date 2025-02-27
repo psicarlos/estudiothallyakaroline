@@ -1,7 +1,9 @@
 import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
-import thallya from '@/images/thallya-pose.png';
+import cliente1 from '@/images/servico-1.jpg';
+import cliente2 from '@/images/servico-2.jpg';
+import cliente3 from '@/images/servico-3.jpg';
 
 export default async function Cliente() {
   return (
@@ -20,10 +22,9 @@ export default async function Cliente() {
         <div className="flex flex-col lg:flex-row justify-between gap-4">
           <div>
             <Image
-              src={thallya}
-              alt="Thallya"
-              width={300}
-              className=" rounded-t-full m-auto"
+              src={cliente1}
+              alt="Unha feita"
+              className=" rounded-t-full m-auto  mdl:w-[200px] w-[300px]"
             />
             <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
               Baby boomer com Glitter
@@ -31,10 +32,9 @@ export default async function Cliente() {
           </div>
           <div>
             <Image
-              src={thallya}
-              alt="Thallya"
-              width={300}
-              className=" rounded-t-full m-auto"
+              src={cliente2}
+              alt="Unha Feita"
+              className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
             <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
               Marmorizado com Folha de Ouro
@@ -42,10 +42,9 @@ export default async function Cliente() {
           </div>
           <div>
             <Image
-              src={thallya}
-              alt="Thallya"
-              width={300}
-              className=" rounded-t-full m-auto"
+              src={cliente3}
+              alt="Unha Feita"
+              className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
             <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
               Manutenção com pó cromo

@@ -1,15 +1,15 @@
 import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
-import thallya from '@/images/thallya-pose.png';
+import unha from '@/images/final.jpg';
 import Button from '@/shared/Button';
 
 export default async function Contato() {
   return (
     <Container id="contato">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
-        <div className="m-auto mdl:m-0 order-2 mdl:order-1">
-          <Image src={thallya} alt="Thallya" width={300} />
+        <div className="m-auto mdl:m-0 order-2 mdl:order-1 items-center">
+          <Image src={unha} alt="Unha finalizada" width={300} />
         </div>
 
         <div className=" order-3 mdl:order-3">

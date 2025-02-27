@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
-import thallya from '@/images/thallya-pose.png';
+import sobre from '@/images/sobre.jpg';
 import Button from '@/shared/Button';
 
 export default async function Sobre() {
@@ -9,7 +9,7 @@ export default async function Sobre() {
     <Container id="sobre" className="">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
         <div className=" m-auto mdl:m-0">
-          <Image src={thallya} alt="Thallya" width={300} />
+          <Image src={sobre} alt="unha" width={300} />
         </div>
 
         <div className="w-full mdl:w-[70%] text-justify">

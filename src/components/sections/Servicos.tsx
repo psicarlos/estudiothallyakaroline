@@ -9,7 +9,7 @@ export default async function Servicos() {
     <Container id="servicos" className=" bg-bgFundo">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
         <div className=" m-auto mdl:m-0">
-          <Image src={thallya} alt="Thallya" width={300} />
+          <Image src={thallya} alt="Thallya" width={800} />
         </div>
 
         <div className="text-zinc-50">
