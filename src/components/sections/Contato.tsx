@@ -14,9 +14,12 @@ export default async function Contato() {
 
         <div>
           <div>
-            <h2 className=" text-5xl">O que vou aprender?</h2>
+            <h2 className=" text-5xl font-bold text-mainColor">
+              O que vou aprender?
+            </h2>
           </div>
-          <ul>
+
+          <ul className="list-disc pl-12 text-gray-800 text-xl py-4">
             <li>Teoria das unhas naturais</li>
             <li>Aula teórica sobre materiais e funções</li>
             <li>Aula teórica sobre tipos de pele e brocas para cada uma</li>
@@ -34,8 +37,8 @@ export default async function Contato() {
             <li>Aula de fotos para vender as unhas nas redes sociais</li>
             <li>Remoção</li>
           </ul>
-          <p>E muito mais</p>
-          <div>
+          <p className="text-xl uppercase">E muito mais ...</p>
+          <div className=" btn-main">
             <Button url="#" />
           </div>
         </div>

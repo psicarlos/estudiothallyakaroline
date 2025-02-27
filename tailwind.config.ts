@@ -19,7 +19,7 @@ export default {
         xl: '1280px',
       },
       backgroundImage: {
-        heroDepoiments: "url('/imgBackgrounds/depo.jpg')",
+        backgroundBanner: "url('/src/images/fundo.jpg')",
       },
       fontFamily: {
         bodyFont: ['space-grotesk', 'sans-serif'],
@@ -28,15 +28,8 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        bodyColorDark: '#212428',
-        bodyColorligth: '#cfcfcf',
-        lightText: '#c4cfde',
-        darkText: '#2d302f',
         boxBg: 'linear-gradient(145deg, #1e2024, #23272b)',
-        btnContato: '#3DD856',
-        colorDetails: '#1BBD73',
-        bgPicture: '#1e293b',
-        bgFundo: '#040013',
+        bgFundo: '#747169',
         mainColor: '#DC9797',
       },
       boxShadow: {

@@ -30,3 +30,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.btn-main {
+  @apply mt-12 items-center justify-center text-center m-auto;
+}

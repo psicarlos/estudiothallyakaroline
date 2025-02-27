@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
-import logo from '@/images/lc.png';
+import logo from '@/images/moldeRusso.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { navigation } from '@/data/navigation';
 import Link from 'next/link';
@@ -27,7 +27,7 @@ export default function Menu() {
       <nav
         className={`${
           sticky
-            ? 'bg-slate-800 bg-opacity-90 p-4 text-white w-full flex items-center justify-between duration-500'
+            ? 'bg-mainColor bg-opacity-90 p-4 text-white w-full flex items-center justify-between duration-500'
             : 'p-8 text-white w-full flex items-center justify-between mx-auto bg-slate-800 bg-opacity-0 duration-500'
         }`}
       >
@@ -37,7 +37,7 @@ export default function Menu() {
               <Image
                 src={logo}
                 alt="Logo da empresa"
-                width={100}
+                width={80}
                 height={35}
                 className="mr-3 w-auto h-auto"
               />
@@ -78,8 +78,8 @@ export default function Menu() {
         <div
           className={
             menuIcon
-              ? 'md:hidden absolute top-0 bottom-0 left-0  items-center w-full h-screen bg-slate-800 text-white ease-in duration-300 text-center flex flex-col justify-between'
-              : 'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-slate text-white ease-in duration-300'
+              ? 'md:hidden absolute top-0 bottom-0 left-0  items-center w-full h-screen bg-mainColor text-white ease-in duration-300 text-center flex flex-col justify-between'
+              : 'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-mainColor text-white ease-in duration-300'
           }
         >
           <div className="w-full">
@@ -91,7 +91,7 @@ export default function Menu() {
                 height={35}
                 className="h-auto w-auto ml-3"
               />
-              <span className="font-extrabold text-xl uppercase text-mainColor">
+              <span className="font-extrabold text-xl uppercase ">
                 Estudio Thellya Karoline
               </span>
             </div>

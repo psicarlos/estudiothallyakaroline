@@ -6,7 +6,7 @@ import Button from '@/shared/Button';
 export default async function Banner() {
   return (
     <>
-      <div id="banner" className="banner">
+      <div id="banner" className="banner  ">
         <div className="flex flex-col mx-auto h-screen justify-center items-center p-5">
           <div className=" hidden fixed right-4 top-1/2 -translate-y-1/2 md:flex flex-col items-center gap-2">
             <a
@@ -20,20 +20,20 @@ export default async function Banner() {
             </a>
           </div>
 
-          <div className="flex flex-col mdl:flex-row justify-center items-center">
+          <div className="flex flex-col mdl:flex-row justify-center items-center gap-2">
             <div className=" order-1 mdl:order-2">
               <Image src={thallya} alt="Thallya" width={250} />
             </div>
+
             <div className=" order-2 mdl:order-1">
-              <h1 className="text-2xl md:text-9xl text-zinc-700">
+              <h1 className="text-2xl md:text-9xl text-zinc-700 ">
                 Molde Russo
               </h1>
 
               <p className="text-lg md:text-4xl pl-8 text-[#FFCCC5]">
                 By: Thallya Karoline
               </p>
-
-              <div>
+              <div className=" btn-main">
                 <Button url="#" />
               </div>
             </div>
