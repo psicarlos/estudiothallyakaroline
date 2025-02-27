@@ -49,6 +49,11 @@ export default async function Cliente() {
             </p>
           </div>
         </div>
+        <p>
+          E muito mais para que você fique apta em pouco tempo não somente em
+          alongamento de unhas mas também em decorações que vão te fazer faturar
+          muito ao final do mês
+        </p>
       </div>
     </Container>
   );

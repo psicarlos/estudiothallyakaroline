@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import thallya from '@/images/thallya-pose.png';
+import Button from '@/shared/Button';
 
 export default async function Sobre() {
   return (
@@ -12,7 +13,26 @@ export default async function Sobre() {
         </div>
 
         <div>
-          <p>Texto de quem sou</p>
+          <h2>
+            Muito mais <span className=" font-bold">PRATICIDADE</span>
+          </h2>
+          <p>
+            O extensor que está <b>revolucionando o mercado das unhas</b>, ele
+            veio para lhe proporcionar mais agilidade, menos desgaste físico e
+            por consequência muito mais qualidade de vida.
+          </p>
+          <p>
+            A melhor opção para substituir a fibra de vidro pois possui menos
+            etapas em seu processo.
+          </p>
+          <p>
+            Prazer eu sou a Thallya Karoline instrutora especialista em
+            Alongamento de Unhas com Naturalidade e vou te ensinar todo
+            conhecimento que adquiri em anos de profissão.
+          </p>
+          <div>
+            <Button url="#" />
+          </div>
         </div>
       </div>
     </Container>
