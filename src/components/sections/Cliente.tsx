@@ -8,7 +8,7 @@ export default async function Cliente() {
     <Container id="cliente">
       <div className="flex flex-col gap-8">
         <div className=" text-center ">
-          <h2 className="text-7xl text-mainColor font-bold">
+          <h2 className="text-5xl mdl:text-7xl text-mainColor font-bold">
             E PARA VOCÊ QUE DESEJA
           </h2>
           <p className="text-xl">
@@ -54,7 +54,7 @@ export default async function Cliente() {
         </div>
 
         <div className="w-full mdl:w-[80%] m-auto">
-          <p className=" text-xl">
+          <p className=" text-xl text-start mdl:text-justify tracking-wider space-y-4">
             E muito mais para que você fique <b>apta</b> em pouco <b>tempo</b>{' '}
             não somente em alongamento de unhas mas também em <b>decorações</b>{' '}
             que vão te fazer <b>faturar</b>

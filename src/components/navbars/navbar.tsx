@@ -27,8 +27,8 @@ export default function Menu() {
       <nav
         className={`${
           sticky
-            ? 'bg-mainColor bg-opacity-90 p-4 text-white w-full flex items-center justify-between duration-500'
-            : 'p-8 text-white w-full flex items-center justify-between mx-auto bg-slate-800 bg-opacity-0 duration-500'
+            ? 'bg-mainColor bg-opacity-90 py-1 px-4 text-white w-full flex items-center justify-between duration-500'
+            : 'p-8 text-white w-full items-center justify-between hidden mdl:flex mx-auto bg-slate-800 bg-opacity-0 duration-500'
         }`}
       >
         <ScrollLink to="banner" onClick={handleSmallerScreensNavigation}>

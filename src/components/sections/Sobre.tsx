@@ -6,18 +6,19 @@ import Button from '@/shared/Button';
 
 export default async function Sobre() {
   return (
-    <Container id="sobre">
+    <Container id="sobre" className="">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
-        <div>
+        <div className=" m-auto mdl:m-0">
           <Image src={thallya} alt="Thallya" width={300} />
         </div>
 
-        <div className="">
-          <h2 className=" text-6xl">
+        <div className="w-full mdl:w-[70%] text-justify">
+          <h2 className=" text-5xl mdl:text-6xl ">
             Muito mais <br />
             <span className=" font-bold">PRATICIDADE</span>
           </h2>
-          <div className="w-full mdl:w-[70%] text-justify">
+
+          <div className="w-full mdl:w-[70%] text-justify tracking-wider space-y-4">
             <p>
               O extensor que está <b>revolucionando o mercado das unhas</b>, ele
               veio para lhe proporcionar mais{' '}
@@ -35,6 +36,7 @@ export default async function Sobre() {
               <b>conhecimento</b> que adquiri em anos de profissão.
             </p>
           </div>
+
           <div className=" btn-main">
             <Button url="#" />
           </div>

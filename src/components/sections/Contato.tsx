@@ -8,36 +8,68 @@ export default async function Contato() {
   return (
     <Container id="contato">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
-        <div>
+        <div className="m-auto mdl:m-0 order-2 mdl:order-1">
           <Image src={thallya} alt="Thallya" width={300} />
         </div>
 
-        <div>
-          <div>
-            <h2 className=" text-5xl font-bold text-mainColor">
+        <div className=" order-3 mdl:order-3">
+          <div className="">
+            <h2 className=" text-4xl mdl:text-5xl font-bold text-mainColor text-center mdl:text-start">
               O que vou aprender?
             </h2>
           </div>
 
-          <ul className="list-disc pl-12 text-gray-800 text-xl py-4">
-            <li>Teoria das unhas naturais</li>
-            <li>Aula teórica sobre materiais e funções</li>
-            <li>Aula teórica sobre tipos de pele e brocas para cada uma</li>
-            <li>Tipos de molde</li>
-            <li>Aula prática de manicure com efeito fotoshop</li>
-            <li>Aula teórica sobre o lixamento</li>
+          <ul className="list-disc pl-12 text-gray-800 text-xl py-4 tracking-wider space-y-2">
+            <li>
+              Teoria das unhas <b>naturais</b>
+            </li>
+            <li>
+              Aula teórica sobre <b>materiais e funções</b>
+            </li>
+            <li>
+              Aula teórica sobre <b>tipos de pele</b> e brocas para cada uma
+            </li>
+            <li>
+              Tipos de <b>molde</b>
+            </li>
+            <li>
+              Aula prática de <b>manicure</b> com efeito <b>fotoshop</b>
+            </li>
+            <li>
+              Aula teórica sobre o <b>lixamento</b>
+            </li>
             <li>Aula preparação da lâmina</li>
-            <li>Controle de Produto</li>
-            <li>Aula prática de aplicação quadrada</li>
-            <li>Aula de aplicação almond</li>
-            <li>Aula de aplicação bailarina</li>
-            <li>Decorações</li>
-            <li>Manutenção</li>
-            <li>Aula de troca de formato almond para bailarina</li>
-            <li>Aula de fotos para vender as unhas nas redes sociais</li>
-            <li>Remoção</li>
+            <li>
+              <b>Controle de Produto</b>
+            </li>
+            <li>
+              Aula prática de <b>aplicação</b> quadrada
+            </li>
+            <li>
+              Aula de aplicação <b>almond</b>
+            </li>
+            <li>
+              Aula de aplicação <b>bailarina</b>
+            </li>
+            <li>
+              <b>Decorações</b>
+            </li>
+            <li>
+              <b>Manutenção</b>
+            </li>
+            <li>
+              Aula de <b>troca de formato</b> almond para bailarina
+            </li>
+            <li>
+              Aula de <b>fotos</b> para vender as unhas nas redes sociais
+            </li>
+            <li>
+              <b>Remoção</b>
+            </li>
           </ul>
-          <p className="text-xl uppercase">E muito mais ...</p>
+          <p className="text-xl uppercase">
+            <b>E muito mais ...</b>
+          </p>
           <div className=" btn-main">
             <Button url="#" />
           </div>

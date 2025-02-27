@@ -7,8 +7,8 @@ interface Propriedades extends HTMLAttributes<HTMLDivElement> {
 
 export default function Container({ id, children, ...props }: Propriedades) {
   return (
-    <div id={id} className="py-20 sm:py-16 scroll-mt-[120px] " {...props}>
-      <div className="mx-auto grid max-w-full lg:max-w-[80%] px-6 lg:px-4 gap-8">
+    <div id={id} className="py-16 sm:py-16 scroll-mt-[120px] " {...props}>
+      <div className="mx-auto grid max-w-full lg:max-w-[80%] px-6 lg:px-4 gap-8 py-12">
         {children}
       </div>
     </div>

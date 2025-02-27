@@ -36,7 +36,7 @@ export default function Faq() {
     <Container id="faq">
       <div className="flex flex-col gap-4 m-auto md:m-0">
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="order-2">
+          <div className="order-2 m-auto mdl:m-0">
             <Image src={thallya} alt="Thallya" width={300} />
           </div>
 
@@ -49,7 +49,7 @@ export default function Faq() {
               {faqs.map((faq, index) => (
                 <div key={index} className="border-b border-zinc-600 pb-2">
                   <button
-                    className="w-full text-left flex justify-between items-center py-3 text-lg font-medium text-gray-800 focus:outline-none bg-mainColor px-4"
+                    className="w-full text-left flex justify-between items-center py-3 text-lg font-bold text-gray-800 focus:outline-none bg-mainColor px-4"
                     onClick={() => toggleFAQ(index)}
                   >
                     {faq.question}
@@ -72,7 +72,7 @@ export default function Faq() {
           </div>
         </div>
 
-        <div className="order-3">
+        <div className=" btn-main order-3">
           <Button url="#" />
         </div>
       </div>
