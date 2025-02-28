@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import Container from '../Container';
 import Image from 'next/image';
@@ -34,11 +35,22 @@ export default function Faq() {
 
   return (
     <Container id="faq">
-      <div className="flex flex-col gap-4 m-auto md:m-0">
+      <motion.div
+        className="flex flex-col gap-4 m-auto md:m-0"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="order-2 m-auto mdl:m-0 hidden mdl:block">
+          <motion.div
+            className="order-2 m-auto mdl:m-0 hidden mdl:block"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
             <Image src={thallya} alt="Thallya" width={500} />
-          </div>
+          </motion.div>
 
           <div className="order-1 w-full items-center">
             <div className="">
@@ -74,15 +86,20 @@ export default function Faq() {
           </div>
         </div>
 
-        <div className=" btn-main order-3">
+        <motion.div
+          className="btn-main"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 1 }}
+        >
           <Link
             className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
             href="#"
           >
             Quero começar
           </Link>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Container>
   );
 }
