@@ -61,7 +61,7 @@ export default async function Contato() {
               Aula de <b>troca de formato</b> almond para bailarina
             </li>
             <li>
-              Manutenção com <b>MOLDE F1.</b>
+              Manutenção com <b>molde F1.</b>
             </li>
             <li>
               <b>Remoção</b>
