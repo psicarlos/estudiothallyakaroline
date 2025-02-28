@@ -8,7 +8,7 @@ export default async function Contato() {
   return (
     <Container id="contato">
       <div className="flex flex-col md:flex-row gap-4 m-auto md:m-0">
-        <div className="m-auto mdl:m-0 order-2 mdl:order-1 items-center">
+        <div className="m-auto mdl:m-0 order-2 mdl:order-1 inline-block items-center">
           <Image src={unha} alt="Unha finalizada" width={300} />
         </div>
 
