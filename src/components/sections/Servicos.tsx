@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import thallya from '@/images/thallya-pose.png';
-import Button from '@/shared/Button';
+import Link from 'next/link';
 
 export default async function Servicos() {
   return (
@@ -14,9 +14,9 @@ export default async function Servicos() {
 
         <div className="text-zinc-50">
           <h2 className="text-4xl mdl:text-7xl text-zinc-50 font-bold text-center mdl:text-start font-lovelace">
-            Quem Será sua mentora?
+            Quem será sua mentora?
           </h2>
-          <p className=" text-xl text-mainColor ml-6 pb-4 font-lovelace">
+          <p className=" text-xl text-mainColor pb-4 font-lovelace">
             Thallya Karoline
           </p>
           <div className="w-full mdl:w-[70%]  tracking-wider space-y-4">
@@ -36,7 +36,12 @@ export default async function Servicos() {
             </p>
           </div>
           <div className=" btn-main">
-            <Button url="#" />
+            <Link
+              className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
+              href="#"
+            >
+              Quero começar
+            </Link>
           </div>
         </div>
       </div>

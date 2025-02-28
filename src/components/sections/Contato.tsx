@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import unha from '@/images/final.jpg';
-import Button from '@/shared/Button';
+import Link from 'next/link';
 
 export default async function Contato() {
   return (
@@ -61,7 +61,7 @@ export default async function Contato() {
               Aula de <b>troca de formato</b> almond para bailarina
             </li>
             <li>
-              Aula de <b>fotos</b> para vender as unhas nas redes sociais
+              Manutenção com <b>monde F1.</b>
             </li>
             <li>
               <b>Remoção</b>
@@ -71,7 +71,12 @@ export default async function Contato() {
             <b>E muito mais ...</b>
           </p>
           <div className=" btn-main">
-            <Button url="#" />
+            <Link
+              className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
+              href="#"
+            >
+              Quero começar
+            </Link>
           </div>
         </div>
       </div>

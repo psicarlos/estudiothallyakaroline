@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import thallya from '@/images/thallya.png';
-import Button from '@/shared/Button';
+import Link from 'next/link';
 
 export default async function Banner() {
   return (
@@ -37,7 +37,12 @@ export default async function Banner() {
                 By: Thallya Karoline
               </p>
               <div className=" btn-main">
-                <Button url="#" />
+                <Link
+                  className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
+                  href="#"
+                >
+                  Quero começar
+                </Link>
               </div>
             </div>
           </div>

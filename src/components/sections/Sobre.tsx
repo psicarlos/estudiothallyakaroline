@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import sobre from '@/images/sobre.jpg';
-import Button from '@/shared/Button';
+import Link from 'next/link';
 
 export default async function Sobre() {
   return (
@@ -38,7 +38,12 @@ export default async function Sobre() {
           </div>
 
           <div className=" btn-main">
-            <Button url="#" />
+            <Link
+              className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
+              href="#"
+            >
+              Quero começar
+            </Link>
           </div>
         </div>
       </div>

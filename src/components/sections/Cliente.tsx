@@ -50,8 +50,7 @@ export default async function Cliente() {
           <p className=" text-xl text-start mdl:text-justify tracking-wider space-y-4">
             E muito mais para que você fique <b>apta</b> em pouco <b>tempo</b>{' '}
             não somente em alongamento de unhas mas também em <b>decorações</b>{' '}
-            que vão te fazer <b>faturar</b>
-            muito ao final do <b>mês</b>
+            que vão te fazer <b>faturar</b> muito ao final do <b>mês</b>.
           </p>
         </div>
       </div>

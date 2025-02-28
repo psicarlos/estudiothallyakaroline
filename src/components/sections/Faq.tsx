@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import thallya from '@/images/thallya-sofa.png';
-import Button from '@/shared/Button';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -51,7 +51,7 @@ export default function Faq() {
               {faqs.map((faq, index) => (
                 <div key={index} className="border-b border-zinc-600 pb-2">
                   <button
-                    className="w-full text-left flex justify-between items-center py-3 text-lg font-bold text-gray-800 focus:outline-none bg-mainColor px-4"
+                    className="w-full text-left flex justify-between items-center py-3 text-lg font-bold text-gray-800 focus:outline-none bg-mainColor px-4 rounded-xl"
                     onClick={() => toggleFAQ(index)}
                   >
                     {faq.question}
@@ -75,7 +75,12 @@ export default function Faq() {
         </div>
 
         <div className=" btn-main order-3">
-          <Button url="#" />
+          <Link
+            className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
+            href="#"
+          >
+            Quero começar
+          </Link>
         </div>
       </div>
     </Container>
