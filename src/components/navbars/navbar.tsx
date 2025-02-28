@@ -16,10 +16,12 @@ export default function Menu() {
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-      window.scrollY > 50 ? setSticky(true) : setSticky(false);
-    });
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -31,7 +33,7 @@ export default function Menu() {
             : 'p-8 text-white w-full items-center justify-between hidden mdl:flex mx-auto bg-slate-800 bg-opacity-0 duration-500'
         }`}
       >
-        <ScrollLink to="banner" onClick={handleSmallerScreensNavigation}>
+        <ScrollLink to="banner" smooth={true} duration={500}>
           <div className="flex items-center">
             <Link href="/">
               <Image
@@ -45,25 +47,38 @@ export default function Menu() {
           </div>
         </ScrollLink>
 
-        <ul className=" hidden md:flex uppercase font-semibold text-xl lg:text-xl text-white">
+        {/* Menu desktop */}
+        <ul className="hidden md:flex uppercase font-semibold text-xl lg:text-xl text-white">
           {navigation.main.map((item) => (
             <li
               key={item.name}
               className="mr-4 lg:mr-8 cursor-pointer hover:text-slate-200"
             >
-              <ScrollLink
-                to={item.to}
-                smooth={true}
-                offset={item.offset}
-                duration={500}
-                className="text-sm font-semibold text-white hover:text-red-400"
-              >
-                {item.name}
-              </ScrollLink>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-white hover:text-red-400"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <ScrollLink
+                  to={item.to ?? ''}
+                  smooth={true}
+                  offset={item.offset}
+                  duration={500}
+                  className="text-sm font-semibold text-white hover:text-red-400"
+                >
+                  {item.name}
+                </ScrollLink>
+              )}
             </li>
           ))}
         </ul>
 
+        {/* Botão de menu mobile */}
         <div
           onClick={handleSmallerScreensNavigation}
           className="flex md:hidden z-30"
@@ -75,39 +90,55 @@ export default function Menu() {
           )}
         </div>
 
+        {/* Menu mobile */}
         <div
-          className={
-            menuIcon
-              ? 'md:hidden absolute top-0 bottom-0 left-0  items-center w-full h-screen bg-mainColor text-white ease-in duration-300 text-center flex flex-col justify-between'
-              : 'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-mainColor text-white ease-in duration-300'
-          }
+          className={`md:hidden fixed top-0 left-0 w-full h-screen bg-mainColor text-white flex flex-col items-center justify-center transition-all duration-300 ${
+            menuIcon ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
         >
-          <div className="w-full">
-            <div className="flex flex-col items-center justify-center my-14">
-              <Image
-                src={logo}
-                alt="Logotipo"
-                width={80}
-                height={35}
-                className="h-auto w-auto ml-3"
-              />
-              <span className="font-extrabold text-xl uppercase ">
-                Estudio Thellya Karoline
-              </span>
-            </div>
-
-            <ul className=" uppercase font-bold text-2xl">
-              {navigation.main.map((item) => (
-                <li
-                  key={item.name}
-                  onClick={handleSmallerScreensNavigation}
-                  className="p-5 hover:text-mainColor cursor-pointer"
-                >
-                  <Link href={`#${item.to}`}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
+          <div className="w-full flex flex-col items-center my-14">
+            <Image
+              src={logo}
+              alt="Logotipo"
+              width={80}
+              height={35}
+              className="h-auto w-auto ml-3"
+            />
+            <span className="font-extrabold text-xl uppercase">
+              Estudio Thellya Karoline
+            </span>
           </div>
+
+          <ul className="uppercase font-bold text-2xl">
+            {navigation.main.map((item) => (
+              <li
+                key={item.name}
+                onClick={handleSmallerScreensNavigation}
+                className="p-5 hover:text-red-400 cursor-pointer"
+              >
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-red-400"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <ScrollLink
+                    to={item.to ?? ''}
+                    smooth={true}
+                    offset={item.offset}
+                    duration={500}
+                    className="text-white hover:text-red-400"
+                  >
+                    {item.name}
+                  </ScrollLink>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
     </header>
