@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import thallya from '@/images/thallya.png';
-import Button from '@/shared/Button';
+import Link from 'next/link';
 
 export default async function Banner() {
   return (
@@ -30,11 +30,16 @@ export default async function Banner() {
                 Molde Russo
               </h1>
 
-              <p className="text-2xl md:text-4xl mdl:pl-8 text-mainColor">
+              <p className="text-xl md:text-4xl mdl:pl-8 text-mainColor">
                 By: Thallya Karoline
               </p>
               <div className=" btn-main">
-                <Button url="#" />
+                <Link
+                  className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor rounded-xl inline-block"
+                  href="#"
+                >
+                  Quero começars
+                </Link>
               </div>
             </div>
           </div>

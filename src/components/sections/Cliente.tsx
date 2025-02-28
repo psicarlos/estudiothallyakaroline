@@ -26,7 +26,7 @@ export default async function Cliente() {
               alt="Unha feita"
               className=" rounded-t-full m-auto  mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
+            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
               Baby boomer com Glitter
             </p>
           </div>
@@ -36,7 +36,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
+            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
               Marmorizado com Folha de Ouro
             </p>
           </div>
@@ -46,7 +46,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold">
+            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
               Manutenção com pó cromo
             </p>
           </div>

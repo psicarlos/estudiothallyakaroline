@@ -8,7 +8,7 @@ export default function Button({ url }: TitleProps) {
   return (
     <>
       <Link
-        className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor rounded-2xl"
+        className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor rounded-xl inline-block"
         href={url}
       >
         Quero começar

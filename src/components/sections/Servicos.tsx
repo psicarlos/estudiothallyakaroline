@@ -13,7 +13,7 @@ export default async function Servicos() {
         </div>
 
         <div className="text-zinc-50">
-          <h2 className="text-5xl mdl:text-7xl text-zinc-50 font-bold">
+          <h2 className="text-5xl mdl:text-7xl text-zinc-50 font-bold text-center mdl:text-start">
             Quem Será sua mentora?
           </h2>
           <p className=" text-2xl text-mainColor ml-6 pb-4">Thallya Karoline</p>

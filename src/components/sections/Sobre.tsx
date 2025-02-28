@@ -12,13 +12,13 @@ export default async function Sobre() {
           <Image src={sobre} alt="unha" width={300} />
         </div>
 
-        <div className="w-full mdl:w-[70%] text-justify">
-          <h2 className=" text-5xl mdl:text-6xl ">
+        <div className="w-full mdl:w-[70%]">
+          <h2 className=" text-5xl mdl:text-6xl mdl:text-start text-center">
             Muito mais <br />
             <span className=" font-bold">PRATICIDADE</span>
           </h2>
 
-          <div className="w-full mdl:w-[70%] text-justify tracking-wider space-y-4">
+          <div className="w-full mdl:w-[70%] tracking-wider space-y-4">
             <p>
               O extensor que está <b>revolucionando o mercado das unhas</b>, ele
               veio para lhe proporcionar mais{' '}
