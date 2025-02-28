@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import thallya from '@/images/thallya.png';
-import Link from 'next/link';
+import Button from '@/shared/Button';
 
 export default async function Banner() {
   return (
@@ -21,25 +21,20 @@ export default async function Banner() {
           </div>
 
           <div className="flex flex-col mdl:flex-row justify-center items-center gap-2">
-            <div className=" order-1 mdl:order-2">
+            <div className=" order-1 mdl:order-2 pt-3 mdl:pt-0">
               <Image src={thallya} alt="Thallya" width={250} />
             </div>
 
             <div className=" order-2 mdl:order-1">
-              <h1 className="text-6xl md:text-9xl text-zinc-700 ">
+              <h1 className="text-5xl md:text-9xl text-zinc-600 font-lovelace">
                 Molde Russo
               </h1>
 
-              <p className="text-xl md:text-4xl mdl:pl-8 text-mainColor">
+              <p className="text-xl md:text-3xl mdl:pl-8 text-mainColor font-lovelace">
                 By: Thallya Karoline
               </p>
               <div className=" btn-main">
-                <Link
-                  className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor rounded-xl inline-block"
-                  href="#"
-                >
-                  Quero começars
-                </Link>
+                <Button url="#" />
               </div>
             </div>
           </div>

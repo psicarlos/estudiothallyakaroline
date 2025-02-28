@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Bold-trial.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Extrabold-trial.ttf') format('truetype');
+  font-weight: extrabold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Light-trial.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Medium-trial.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  src: url('/fonts/Lovelace/Lovelace-Italic-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -33,4 +75,8 @@ body {
 
 .btn-main {
   @apply mt-12 items-center justify-center text-center m-auto;
+}
+
+.title-service {
+  @apply bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg font-lovelace;
 }

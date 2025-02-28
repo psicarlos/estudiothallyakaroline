@@ -24,6 +24,7 @@ export default {
       fontFamily: {
         bodyFont: ['space-grotesk', 'sans-serif'],
         titleFont: ['Exo', 'sans-serif'],
+        lovelace: ['Lovelace', 'serif'],
       },
       colors: {
         background: 'var(--background)',

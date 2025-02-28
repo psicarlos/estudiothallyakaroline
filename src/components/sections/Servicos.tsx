@@ -13,10 +13,12 @@ export default async function Servicos() {
         </div>
 
         <div className="text-zinc-50">
-          <h2 className="text-5xl mdl:text-7xl text-zinc-50 font-bold text-center mdl:text-start">
+          <h2 className="text-4xl mdl:text-7xl text-zinc-50 font-bold text-center mdl:text-start font-lovelace">
             Quem Será sua mentora?
           </h2>
-          <p className=" text-2xl text-mainColor ml-6 pb-4">Thallya Karoline</p>
+          <p className=" text-xl text-mainColor ml-6 pb-4 font-lovelace">
+            Thallya Karoline
+          </p>
           <div className="w-full mdl:w-[70%]  tracking-wider space-y-4">
             <p>
               <b>Especialista</b> em técnicas avançadas como Molde Russo,{' '}

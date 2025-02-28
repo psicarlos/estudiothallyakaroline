@@ -9,8 +9,8 @@ export default async function Cliente() {
   return (
     <Container id="cliente">
       <div className="flex flex-col gap-8">
-        <div className=" text-center ">
-          <h2 className="text-5xl mdl:text-7xl text-mainColor font-bold">
+        <div className=" text-center flex flex-col gap-4">
+          <h2 className="text-4xl mdl:text-7xl text-mainColor font-bold font-lovelace">
             E PARA VOCÊ QUE DESEJA
           </h2>
           <p className="text-xl">
@@ -26,9 +26,7 @@ export default async function Cliente() {
               alt="Unha feita"
               className=" rounded-t-full m-auto  mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
-              Baby boomer com Glitter
-            </p>
+            <p className=" title-service">Baby boomer com Glitter</p>
           </div>
           <div>
             <Image
@@ -36,9 +34,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
-              Marmorizado com Folha de Ouro
-            </p>
+            <p className=" title-service">Marmorizado com Folha de Ouro</p>
           </div>
           <div>
             <Image
@@ -46,9 +42,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" bg-mainColor text-zinc-50 py-4 px-6 text-center font-bold rounded-lg">
-              Manutenção com pó cromo
-            </p>
+            <p className=" title-service">Manutenção com pó cromo</p>
           </div>
         </div>
 

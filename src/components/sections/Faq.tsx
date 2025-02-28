@@ -42,7 +42,7 @@ export default function Faq() {
 
           <div className="order-1 w-full items-center">
             <div className="">
-              <h2 className="text-6xl text-mainColor font-bold mb-4">
+              <h2 className="text-6xl text-mainColor font-bold mb-4 font-lovelace">
                 Dúvidas Frequentes:
               </h2>
             </div>

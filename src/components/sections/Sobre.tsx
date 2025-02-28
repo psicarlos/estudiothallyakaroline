@@ -13,7 +13,7 @@ export default async function Sobre() {
         </div>
 
         <div className="w-full mdl:w-[70%]">
-          <h2 className=" text-5xl mdl:text-6xl mdl:text-start text-center">
+          <h2 className=" text-4xl mdl:text-6xl mdl:text-start text-center font-lovelace">
             Muito mais <br />
             <span className=" font-bold">PRATICIDADE</span>
           </h2>
