@@ -26,7 +26,7 @@ export default async function Cliente() {
               alt="Unha feita"
               className=" rounded-t-full m-auto  mdl:w-[200px] w-[300px]"
             />
-            <p className=" title-service">Baby boomer com Glitter</p>
+            <p className=" title-service">Marmorizado com Folha de Ouro</p>
           </div>
           <div>
             <Image
@@ -34,7 +34,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" title-service">Marmorizado com Folha de Ouro</p>
+            <p className=" title-service">Baby boomer com Glitter</p>
           </div>
           <div>
             <Image
@@ -42,7 +42,7 @@ export default async function Cliente() {
               alt="Unha Feita"
               className=" rounded-t-full m-auto mdl:w-[200px] w-[300px]"
             />
-            <p className=" title-service">Manutenção com pó cromo</p>
+            <p className=" title-service">Esmaltação em Gel</p>
           </div>
         </div>
 

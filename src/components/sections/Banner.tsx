@@ -23,6 +23,9 @@ export default async function Banner() {
           <div className="flex flex-col mdl:flex-row justify-center items-center gap-2">
             <div className=" order-1 mdl:order-2 pt-3 mdl:pt-0">
               <Image src={thallya} alt="Thallya" width={250} />
+              <div className=" hidden mdl:block h-1 bg-zinc-400 opacity-40 shadow-xl ">
+                {' '}
+              </div>
             </div>
 
             <div className=" order-2 mdl:order-1">

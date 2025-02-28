@@ -62,6 +62,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.divisor {
+  display: block;
+  height: 2px;
+  background-color: #000000;
+}
+
 .banner {
   width: 100%;
   min-height: 100vh;
