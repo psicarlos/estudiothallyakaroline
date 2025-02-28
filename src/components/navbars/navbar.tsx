@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
-import logo from '@/images/moldeRusso.png';
+import logo from '@/images/logo.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { navigation } from '@/data/navigation';
 import Link from 'next/link';
