@@ -31,7 +31,7 @@ export default function Banner() {
 
         <div className="flex flex-col mdl:flex-row justify-center items-center gap-2">
           <motion.div
-            className="order-1 mdl:order-2 pt-3 mdl:pt-0"
+            className="order-1 mdl:order-2 pt-10 mdl:pt-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
