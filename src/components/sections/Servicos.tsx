@@ -11,7 +11,7 @@ export default function Servicos() {
   return (
     <Container id="servicos" className=" bg-bgFundo">
       <motion.div
-        className="flex flex-col md:flex-row gap-4 m-auto md:m-0"
+        className="flex flex-col md:flex-row gap-8 m-auto md:m-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
