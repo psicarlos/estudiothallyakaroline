@@ -61,7 +61,8 @@ export default function Banner() {
             >
               <Link
                 className="text-md font-bold px-6 py-4 cursor-pointer uppercase bg-mainColor hover:bg-[#f2b5b5] rounded-xl inline-block border-2 border-zinc-600"
-                href="#"
+                href="https://pay.hotmart.com/F98335306S"
+                target="_blank"
               >
                 Quero começar
               </Link>
