@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
-import unha from '@/images/final.jpg';
+// import unha from '@/images/final.jpg';
+import unhas from '@/images/unhas2.jpg';
 import Link from 'next/link';
 
 export default function Contato() {
@@ -18,7 +19,7 @@ export default function Contato() {
         viewport={{ once: true, amount: 0.3 }} // Ativa a animação quando 30% da seção aparece
       >
         <div className="m-auto mdl:m-0 order-2 mdl:order-1 inline-block items-center">
-          <Image src={unha} alt="Unha finalizada" width={300} />
+          <Image src={unhas} alt="Unha finalizada" width={300} />
         </div>
 
         <div className=" order-3 mdl:order-3">
