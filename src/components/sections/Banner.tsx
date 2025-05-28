@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
 import thallya from '@/images/thallya.png';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Banner() {
   return (
@@ -53,7 +53,7 @@ export default function Banner() {
               By: Thallya Karoline
             </p>
 
-            <motion.div
+            {/* <motion.div
               className="btn-main"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,7 @@ export default function Banner() {
               >
                 Quero começar
               </Link>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

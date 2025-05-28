@@ -5,7 +5,7 @@ import React from 'react';
 import Container from '../Container';
 import Image from 'next/image';
 import sobre from '@/images/sobre.jpg';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Sobre() {
   return (
@@ -46,7 +46,7 @@ export default function Sobre() {
             </p>
           </div>
 
-          <motion.div
+          {/* <motion.div
             className="btn-main"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -59,7 +59,7 @@ export default function Sobre() {
             >
               Quero começar
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
     </Container>

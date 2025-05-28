@@ -6,7 +6,7 @@ import Container from '../Container';
 import Image from 'next/image';
 import thallya from '@/images/thallya-sofa.png';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const faqs = [
   {
@@ -86,7 +86,7 @@ export default function Faq() {
           </div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           className="btn-main"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -99,7 +99,7 @@ export default function Faq() {
           >
             Quero começar
           </Link>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </Container>
   );

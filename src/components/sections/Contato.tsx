@@ -6,7 +6,7 @@ import Container from '../Container';
 import Image from 'next/image';
 // import unha from '@/images/final.jpg';
 import unhas from '@/images/unhas2.jpg';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Contato() {
   return (
@@ -80,7 +80,7 @@ export default function Contato() {
           <p className="text-xl uppercase">
             <b>E muito mais ...</b>
           </p>
-          <motion.div
+          {/* <motion.div
             className="btn-main"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -93,7 +93,7 @@ export default function Contato() {
             >
               Quero começar
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
     </Container>
